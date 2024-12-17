@@ -8,7 +8,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: DEMO-SERVICE
-          uri: http://localhost:9090
+        - id: mcam_georeference_ms
+          uri: https://pokeapi.co
           predicates:
-            - Path=/mcam/**
+            - Path=/api/v2/pokemon/**
